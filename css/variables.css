@@ -1,0 +1,22 @@
+:root {
+  /* ======== Colors ======== */
+  --bg-main: #060606;
+  --bg-maincard: #171717;
+  --bg-topcard: #272626;
+
+  --primary-color: #468646;
+  --primary-color-hover: #399739;
+  --cta-bg-primary: #fdfdfd;
+  --cta-text-primary: #060606;
+  --cta-bg-primary-hover: #060606;
+  --cta-text-primary-hover: #fdfdfd;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #9f9c9c;
+
+  /* ======== Transitions ======== */
+  --trans-03: all 0.2s ease;
+  --trans-04: all 0.3s ease;
+  --trans-05: all 0.4s ease;
+  --trans-06: all 0.5s ease;
+}
