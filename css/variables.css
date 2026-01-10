@@ -13,6 +13,7 @@
 
   --text-primary: #f8fafc;
   --text-secondary: #9f9c9c;
+  --text-accent: #fd1d1d;
 
   /* ======== Transitions ======== */
   --trans-03: all 0.2s ease;

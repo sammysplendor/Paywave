@@ -132,11 +132,26 @@ form input {
   padding: 1rem 2rem;
   border-radius: 1.4rem;
   font-family: inherit;
+  color: var(--text-primary);
+  background-color: transparent;
+  border: 2px solid var(--text-secondary);
 }
 
 .form-item #password::placeholder {
   font-size: 4rem;
   letter-spacing: 0.5rem;
+}
+
+.form-item #password {
+  letter-spacing: 0.5rem;
+}
+
+.forgot-password {
+  font-size: small;
+  font-weight: 300;
+  text-decoration-line: underline;
+  text-align: right;
+  color: var(--text-accent);
 }
 
 .form-btn-container {
@@ -165,4 +180,9 @@ form button:hover {
 .signin-page-container .trust-msg {
   text-align: center;
   font-size: 1.2rem;
+}
+
+/* =============== DASHBOARD =============== */
+.dashboard-container {
+  color: var(--text-primary);
 }
