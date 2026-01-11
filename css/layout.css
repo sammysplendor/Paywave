@@ -1,0 +1,7 @@
+.sidebar-nav {
+  height: 100vh;
+  width: 26rem;
+  padding: 2rem;
+  color: var(--text-secondary);
+  background: var(--bg-maincard);
+}
