@@ -13,7 +13,8 @@ footer {
 .section {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  justify-content: center;
+  gap: 2rem;
   padding: 2rem;
   background: var(--bg-maincard);
   border-radius: 1.5rem;
