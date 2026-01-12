@@ -100,7 +100,7 @@
 /* ======== MAIN CONTENT ======== */
 
 .dashboard-main-content {
-  min-height: 100vh;
+  height: 100vh;
   flex-grow: 1;
   margin-left: 21rem;
   padding: 2rem;
@@ -160,7 +160,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
-  margin-top: 3rem;
+  padding: 2rem 0rem;
 }
 
 .debit-card-section .card-container {
@@ -283,4 +283,55 @@
 .balance-section .buttons-container button:hover {
   padding: 1.1rem;
   font-size: 1.6rem;
+}
+
+.transaction-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-section .section-header div {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.6rem;
+  background: var(--bg-topcard);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-secondary);
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-item .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.list-item .detail dt {
+  font-size: 1.5rem;
+}
+
+.list-item .detail dd {
+  color: var(--text-secondary);
 }
