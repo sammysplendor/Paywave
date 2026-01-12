@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paywave</title>
+    <title>Paywave - Dashboard</title>
 
     <!-- ========== Font Family - Josefin Sans ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,51 +36,55 @@
           <p>Paywave</p>
         </div>
 
+        <i class="fa-solid fa-angle-right toggle"></i>
+
         <div class="sidebar-menu">
           <ul class="main-menu">
             <li>
-              <a href="#"
+              <a class="dashboard-tab" href="#"
                 ><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a
               >
             </li>
-            <li>
+            <li class="inactive-menu-item">
               <a href="#"
                 ><i class="fa-solid fa-money-bill-transfer"></i
                 ><span>Transaction</span></a
               >
             </li>
-            <li>
+            <li class="inactive-menu-item">
               <a href="#"
                 ><i class="fa-solid fa-credit-card"></i><span>Cards</span></a
               >
             </li>
-            <li>
+            <li class="inactive-menu-item">
               <a href="#"
                 ><i class="fa-solid fa-chart-area"></i><span>Analytics</span></a
               >
             </li>
-            <li>
+            <li class="inactive-menu-item">
               <a href="#"
                 ><i class="fa-solid fa-gear"></i><span>Settings</span></a
               >
             </li>
           </ul>
 
-          <div class="other-menu">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i
-            ><span>Logout</span>
-          </div>
+          <div class="sidebar-footer">
+            <div class="other-menu">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i
+              ><span>Logout</span>
+            </div>
 
-          <div class="brand-msg">
-            <img src="../images/logo.jpg" alt="logo" width="40px" />
-            <p>
-              Digital Payment Platform is a solution for all types of business
-            </p>
+            <div class="brand-msg">
+              <img src="../images/logo.jpg" alt="logo" width="40px" />
+              <p>
+                Digital Payment Platform is a solution for all types of business
+              </p>
+            </div>
           </div>
         </div>
       </aside>
 
-      <main class="dashboard-main-area">
+      <main class="dashboard-main-content">
         <header>
           <div class="welcome-msg">
             <h3>Welcome to Paywave</h3>
@@ -88,25 +92,29 @@
           </div>
 
           <div class="search-bar-container">
-            <div class="search-bar">
-              <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
-            </div>
+            <input
+              class="search-input"
+              type="text"
+              placeholder="&#xf002; Search..."
+            />
           </div>
 
           <div class="header-items">
-            <i class="fa-solid fa-sun"></i><i class="fa-solid fa-bell"></i
-            ><i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-sun" title="Change mode"></i>
+            <i class="fa-solid fa-bell" title="Notification"></i>
+            <i class="fa-solid fa-user" title="Profile"></i>
           </div>
         </header>
 
         <section class="dashboard-sections">
-          <div class="debit-card-section">
+          <div class="section debit-card-section">
             <h4 class="section-title">Debit Card Account</h4>
 
             <div class="card-container">
               <div class="debit-card">
-                <div class="card name">
-                  <span>Paywave</span><span>Platinum Debit</span>
+                <div class="card-name">
+                  <span class="name">Paywave</span>
+                  <span class="card-type">Platinum Debit</span>
                 </div>
                 <img
                   src="../images/flat-color-icons_sim-card-chip.jpg"
@@ -129,7 +137,7 @@
             </div>
           </div>
 
-          <div class="balance-section">
+          <div class="section balance-section">
             <h4 class="section-title">Your Total Balance</h4>
 
             <h2 class="amount">₦10,182,000</h2>
@@ -144,7 +152,7 @@
             </div>
           </div>
 
-          <div class="transaction-section">
+          <div class="section transaction-section">
             <div class="section-header">
               <h4 class="section-title">Recent Transactions</h4>
               <div>
@@ -185,7 +193,7 @@
             </dl>
           </div>
 
-          <div class="expenses-section">
+          <div class="section expenses-section">
             <h4 class="section-title">Expenses</h4>
           </div>
         </section>
