@@ -41,30 +41,39 @@
         <div class="sidebar-menu">
           <ul class="main-menu">
             <li>
-              <a class="dashboard-tab" href="#"
-                ><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a
-              >
+              <a class="dashboard-tab" href="#">
+                <i class="fa-solid fa-gauge"></i><span>Dashboard</span>
+              </a>
             </li>
+
             <li class="inactive-menu-item">
-              <a href="#"
-                ><i class="fa-solid fa-money-bill-transfer"></i
-                ><span>Transaction</span></a
-              >
+              <a href="#">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                <span>Transaction</span>
+              </a>
             </li>
+
             <li class="inactive-menu-item">
-              <a href="#"
-                ><i class="fa-solid fa-credit-card"></i><span>Cards</span></a
-              >
+              <a href="#">
+                <i class="fa-solid fa-credit-card"></i><span>Cards</span>
+              </a>
             </li>
+
             <li class="inactive-menu-item">
-              <a href="#"
-                ><i class="fa-solid fa-chart-area"></i><span>Analytics</span></a
-              >
+              <a href="#">
+                <i class="fa-solid fa-chart-area"></i><span>Analytics</span>
+              </a>
             </li>
+
             <li class="inactive-menu-item">
-              <a href="#"
-                ><i class="fa-solid fa-gear"></i><span>Settings</span></a
-              >
+              <button class="settings">
+                <i class="fa-solid fa-gear"></i><span>Settings</span>
+              </button>
+              <ul>
+                <li>Profile & Security</li>
+                <li>Payment Preference</li>
+                <li>Notifications</li>
+              </ul>
             </li>
           </ul>
 
@@ -75,7 +84,10 @@
             </div>
 
             <div class="brand-msg">
-              <img src="../images/logo.jpg" alt="logo" width="40px" />
+              <span>
+                <img src="../images/logo.jpg" alt="logo" width="40px" />
+                Paywave 2026
+              </span>
               <p>
                 Digital Payment Platform is a solution for all types of business
               </p>
@@ -172,7 +184,7 @@
                   </div>
                 </div>
 
-                <p>+ ₦2,300,000</p>
+                <p class="addition">+ ₦2,300,000</p>
               </div>
 
               <div class="list-item">
@@ -188,7 +200,7 @@
                   </div>
                 </div>
 
-                <p>- ₦24,906</p>
+                <p class="subtraction">- ₦24,906</p>
               </div>
 
               <div class="list-item">
@@ -204,13 +216,43 @@
                   </div>
                 </div>
 
-                <p>+ ₦240,250</p>
+                <p class="addition">+ ₦240,250</p>
               </div>
             </dl>
           </div>
 
           <div class="section expenses-section">
             <h4 class="section-title">Expenses</h4>
+
+            <div class="guage-container">
+              <svg class="guage" viewbox="0 0 200 100">
+                <path
+                  d="M20 100 A80 80 0 0 1 180 100"
+                  fill="none"
+                  stroke="#272626"
+                  stroke-width="20"
+                />
+                <path
+                  id="expensesArc"
+                  d="M20 100 A80 80 0 0 1 180 100"
+                  fill="none"
+                  stroke="#468646"
+                  stroke-width="20"
+                  stroke-dasharray="251"
+                  stroke-dashoffset="126"
+                />
+              </svg>
+
+              <div class="guage-value">
+                <h3>50%</h3>
+                <p>Normal level</p>
+              </div>
+            </div>
+
+            <div class="amount-display-container">
+              <span class="caption">Total Exp:</span>
+              <span id="amount"> ₦2,760,000</span>
+            </div>
           </div>
         </section>
 
