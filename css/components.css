@@ -5,6 +5,11 @@
   font-weight: 300;
 }
 
+.signin-page-container header,
+.branding-and-trust-panel header {
+  text-align: center;
+}
+
 footer {
   margin-top: 8rem;
   color: var(--text-secondary);
@@ -55,4 +60,37 @@ form input {
   color: var(--text-primary);
   background-color: transparent;
   border: 2px solid var(--text-secondary);
+}
+
+.form-item #password::placeholder,
+.form-item #confirm-password::placeholder {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+.form-item #password {
+  letter-spacing: 0.5rem;
+}
+
+.form-btn-container {
+  width: 50%;
+  text-align: center;
+}
+
+form button {
+  border: none;
+  padding: 1rem;
+  border-radius: 1.4rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: inherit;
+  background: var(--cta-bg-primary);
+  color: var(--cta-text-primary);
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--cta-bg-primary-hover);
+  color: var(--cta-text-primary-hover);
+  border: 1.5px solid var(--cta-text-primary-hover);
 }

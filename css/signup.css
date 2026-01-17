@@ -1,3 +1,50 @@
 .signup-page-container {
   color: var(--text-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
+.branding-and-trust-panel {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  background: url(../images/signup-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.headline-container h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.headline-container p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.trust-indicators {
+  margin-top: 20rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.trust-indicators span {
+  margin-right: 1rem;
+}
+
+.trust-indicators .fa-solid {
+  color: var(--primary-color);
+  font-size: 2rem;
 }
