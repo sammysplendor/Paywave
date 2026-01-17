@@ -1,4 +1,5 @@
-.signup-link {
+.signup-link,
+.signin-link {
   color: var(--text-primary);
   font-size: 1.8rem;
   font-weight: 300;
