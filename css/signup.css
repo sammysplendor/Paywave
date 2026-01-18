@@ -10,7 +10,7 @@
 .branding-and-trust-panel {
   padding: 1rem 3rem;
   border-radius: 1rem;
-  background: url(../images/signup-bg.jpg);
+  background: url(../images/signup-page-bg-img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,4 +47,34 @@
 .trust-indicators .fa-solid {
   color: var(--primary-color);
   font-size: 2rem;
+}
+
+/* ===== RIGHT COLUMN - FORM SECTION ===== */
+.signup-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.form-title h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.form-title p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* .signup-form-container #signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+} */
+#signup-form {
+  width: 90%;
 }
