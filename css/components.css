@@ -65,11 +65,12 @@ form input {
 .form-item #password::placeholder,
 .form-item #confirm-password::placeholder {
   font-size: 4rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 1rem;
 }
 
-.form-item #password {
-  letter-spacing: 0.5rem;
+.form-item #password,
+.form-item #confirm-password {
+  letter-spacing: 1rem;
 }
 
 .form-btn-container {
