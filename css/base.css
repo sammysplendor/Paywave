@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* (10px/16px) x 100 = 62.5% */
 }
 
 body {
@@ -74,6 +74,7 @@ a {
 
 .signin-btn {
   display: inline-block;
+  text-align: center;
   padding: 1rem 4rem;
   border-radius: 1.4rem;
   background: var(--cta-bg-primary);
@@ -86,7 +87,7 @@ a {
   border: 1.5px solid var(--cta-text-primary-hover);
 }
 
-/* =============== LOGIN PAGE =============== */
+/* =============== SIGNIN PAGE =============== */
 .signin-page-container {
   display: flex;
   flex-direction: column;
