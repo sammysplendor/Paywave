@@ -3,6 +3,7 @@
   color: var(--text-primary);
   font-size: 1.8rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .signin-page-container header,

@@ -1,6 +1,5 @@
-/* =============== ENTRY PAGE RESPONSIVENESS =============== */
+/* ============ LARGE (Laptops): 1024px - 1280px ============ */
 
-/* -- LARGE (Laptops): 1024px - 1280px -- */
 @media (max-width: 72rem) {
   /* 1150px / 16px = 72rem */
 
@@ -9,7 +8,8 @@
   }
 }
 
-/* -- MEDIUM (Tablets): 768px - 1023px -- */
+/* ============ MEDIUM (Tablets): 768px - 1023px ============ */
+
 @media (max-width: 43rem) {
   /* 690px / 16px = 43rem */
 
@@ -26,20 +26,64 @@
     width: 13rem;
   }
 
-  .entry-message h2 {
+  .entry-message h2,
+  .signin-page-container h2 {
     font-size: 4rem;
   }
 
-  .entry-message p {
+  .entry-message p,
+  .signin-page-container p {
     font-size: 1.8rem;
   }
 
   .signin-btn {
     width: 100%;
   }
+
+  .signin-page-container {
+    margin: 0rem 4rem;
+  }
+
+  .branding-and-trust-panel header img {
+    width: 7rem;
+  }
+
+  .headline-container h2,
+  .form-title h2 {
+    font-size: 2.8rem;
+  }
+
+  .trust-indicators {
+    font-size: 1.2rem;
+  }
+
+  .trust-indicators span {
+    margin-right: 2rem;
+  }
+
+  .trust-indicators .fa-solid {
+    font-size: 1.6rem;
+  }
+
+  .signup-form-container {
+    padding: 1.5rem 6rem;
+  }
+
+  .error {
+    font-size: 1rem;
+  }
+
+  #signup-form .small-txt {
+    text-align: left;
+  }
+
+  .small-txt {
+    font-size: 1.1rem;
+  }
 }
 
-/* -- SMALL (Phone landscape): 576px - 767px -- */
+/* ============ SMALL (Phone landscape): 576px - 767px ============ */
+
 @media (max-width: 32rem) {
   /* 510px / 16px = 32rem */
 
@@ -47,7 +91,8 @@
     font-size: 43.8%; /* (7px/16px) x 100 = 43.8% */
   }
 
-  .entry-page-container {
+  .entry-page-container,
+  .signin-page-container {
     gap: 3rem;
   }
 
@@ -55,20 +100,32 @@
     width: 10rem;
   }
 
-  .entry-message h2 {
+  .entry-message h2,
+  .signin-page-container h2 {
     font-size: 3.5rem;
   }
 
-  .entry-message p {
+  .entry-message p,
+  .signin-page-container p {
     font-size: 1.6rem;
   }
 
   .cta {
     width: 100%;
   }
+
+  form,
+  #signup-form {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 16rem;
+  }
 }
 
-/* -- X-SMALL (Phone portrait): < 576px -- */
+/* ============ X-SMALL (Phone portrait): < 576px ============ */
+
 @media (max-width: 31rem) {
   /* 498px / 16px = 31rem */
 
@@ -99,8 +156,72 @@
     gap: 6rem;
   }
 
+  form {
+    gap: 4rem;
+  }
+
+  .form-btn-container {
+    margin-bottom: 4rem;
+  }
+
   footer {
-    margin-top: 22rem;
     font-size: 0.9rem;
+    margin-top: 20rem;
+  }
+
+  .signup-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .branding-and-trust-panel {
+    padding: 2rem 4rem;
+    margin: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  .branding-and-trust-panel header {
+    margin-top: 0rem;
+  }
+
+  .branding-and-trust-panel header img {
+    width: 5rem;
+    border-radius: 1rem;
+  }
+
+  .headline-container {
+    margin-top: 5rem;
+  }
+
+  .trust-indicators {
+    margin-top: 5rem;
+    font-size: 1rem;
+  }
+
+  .signup-form-container {
+    padding: 1.5rem 4rem;
+  }
+
+  .form-title h2 {
+    font-size: 2.5rem;
+  }
+
+  #signup-form .small-txt {
+    text-align: left;
+  }
+
+  .small-txt {
+    font-size: 1rem;
   }
 }
+
+/* =============== SIGNIN PAGE RESPONSIVENESS =============== */
+
+/* -- LARGE (Laptops): 1024px - 1280px -- */
+
+/* -- MEDIUM (Tablets): 768px - 1023px -- */
+
+/* -- SMALL (Phone landscape): 576px - 767px -- */
+
+/* -- X-SMALL (Phone portrait): < 576px -- */
