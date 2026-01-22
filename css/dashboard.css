@@ -9,6 +9,7 @@
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 10;
 }
 
 .sidebar-nav .toggle {
@@ -26,6 +27,10 @@
   border-radius: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+.hamburger {
+  display: none;
 }
 
 .sidebar-nav .brandname-and-logo {
@@ -150,7 +155,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+}
+
+.welcome-msg img {
+  width: 4rem;
+  border-radius: 1rem;
+  display: none;
 }
 
 .welcome-msg h3 {
@@ -163,24 +174,42 @@
   color: var(--text-secondary);
 }
 
+.mobile-txt {
+  display: none;
+}
+
 .search-bar-container {
   width: 40%;
+  display: flex;
+  /* position: relative; */
+}
+
+.search-icon {
+  display: none;
 }
 
 .search-input {
   width: 100%;
-  padding: 1.2rem;
-  border-radius: 2rem;
-  font-weight: 300;
-  background: transparent;
-  border: 1px solid var(--text-secondary);
   color: var(--text-primary);
+  background: transparent;
+  border-radius: 2rem;
+  border: 1px solid var(--text-secondary);
+  padding: 1.2rem;
+  font-family: inherit;
+  font-weight: 300;
+  transition: var(--trans-04);
 }
 
 .search-input::placeholder {
   font-style: italic;
-  font-family: "Font Awesome 7 Free";
-  font-weight: 600;
+  font-weight: 300;
+  color: var(--text-secondary);
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .header-items {

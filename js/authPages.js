@@ -1,7 +1,7 @@
 export const signupFormValidation = () => {
   const signupPage = document.getElementById("signup-page");
 
-  if (signupPage.id === "signup-page") {
+  if (signupPage) {
     const signupForm = document.querySelector("#signup-form");
     const error = document.querySelector(".error");
 

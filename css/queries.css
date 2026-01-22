@@ -214,14 +214,92 @@
   .small-txt {
     font-size: 1rem;
   }
+
+  .dashboard-main-content {
+    margin-top: 8rem;
+    padding: 0 1rem;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .dashboard-main-content header {
+    position: fixed;
+    top: 0;
+    background: var(--bg-maincard);
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .left-section {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 0.5rem;
+    background: none;
+  }
+
+  .hamburger span {
+    width: 2.4rem;
+    height: 2px;
+    background-color: var(--text-primary);
+  }
+
+  .sidebar-nav {
+    display: none;
+  }
+
+  .sidebar-nav.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-bar-container {
+    width: auto;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .search-input.active {
+    display: flex;
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+    background: transparent;
+    color: var(--text-secondary);
+    border-radius: 50%;
+    border: 1px solid var(--text-secondary);
+    cursor: pointer;
+  }
+
+  .desktop-txt {
+    display: none;
+  }
+
+  .welcome-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-txt,
+  .welcome-msg img {
+    display: inline;
+  }
+
+  .dashboard-sections {
+    padding: 0 2rem;
+  }
 }
-
-/* =============== SIGNIN PAGE RESPONSIVENESS =============== */
-
-/* -- LARGE (Laptops): 1024px - 1280px -- */
-
-/* -- MEDIUM (Tablets): 768px - 1023px -- */
-
-/* -- SMALL (Phone landscape): 576px - 767px -- */
-
-/* -- X-SMALL (Phone portrait): < 576px -- */

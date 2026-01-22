@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
     <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+
+    <!-- ========== JAVASCRIPT File ========== -->
+    <script type="module" src="../js/main.js" defer></script>
 
     <!-- ========== Font-awesome icons ========== -->
     <link
@@ -98,23 +102,39 @@
 
       <main class="dashboard-main-content">
         <header>
-          <div class="welcome-msg">
-            <h3>Welcome to Paywave</h3>
-            <p>Hi, Sammy Splendor. Welcome Back.</p>
+          <div class="left-section">
+            <button class="hamburger" aria-label="Open menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="welcome-msg">
+              <img src="../images/logo.jpg" alt="logo" width="40px" />
+              <h3><span class="desktop-txt">Welcome to Paywave</span></h3>
+              <h3><span class="mobile-txt">Hi, Sammy</span></h3>
+              <p>
+                <span class="desktop-txt"
+                  >Hi, Sammy Splendor. Welcome Back.</span
+                >
+              </p>
+            </div>
           </div>
 
-          <div class="search-bar-container">
-            <input
-              class="search-input"
-              type="text"
-              placeholder="&#xf002; Search..."
-            />
-          </div>
+          <div class="right-section">
+            <div class="search-bar-container">
+              <input class="search-input" type="text" placeholder="Search..." />
 
-          <div class="header-items">
-            <i class="fa-solid fa-sun" title="Change mode"></i>
-            <i class="fa-solid fa-bell" title="Notification"></i>
-            <i class="fa-solid fa-user" title="Profile"></i>
+              <button class="search-icon" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <div class="header-items">
+              <i class="fa-solid fa-sun" title="Change mode"></i>
+              <i class="fa-solid fa-bell" title="Notification"></i>
+              <i class="fa-solid fa-user" title="Profile"></i>
+            </div>
           </div>
         </header>
 
