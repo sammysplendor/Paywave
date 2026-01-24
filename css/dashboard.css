@@ -115,13 +115,13 @@
   gap: 1rem;
   font-size: 1.5rem;
   color: var(--text-accent);
+  cursor: pointer;
 }
 
 .brand-msg {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 2rem;
 }
 
 .brand-msg span {
@@ -179,7 +179,7 @@
 }
 
 .search-bar-container {
-  width: 40%;
+  width: 100%;
   display: flex;
   /* position: relative; */
 }
@@ -210,6 +210,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  width: 60%;
 }
 
 .header-items {
@@ -233,9 +234,8 @@
 /* ---------- Debit Card Section ---------- */
 .debit-card-section .card-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 6rem;
 }
 
 .debit-card {
@@ -243,14 +243,14 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  min-width: 70%;
+  min-width: 60%;
   padding: 2rem;
   border-radius: 1.4rem;
   background: var(--primary-color);
 }
 
 .debit-card .card-name,
-.debit-card .date-and-cardlogo {
+.debit-card .date-and-visalogo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -268,15 +268,12 @@
 
 .debit-card img {
   border-radius: 0.8rem;
+  width: 5rem;
 }
 
 .debit-card .card-number {
   font-size: 2.4rem;
   letter-spacing: 1.5px;
-}
-
-.fa-cc-visa {
-  font-size: 3rem;
 }
 
 .add-btn-container {
@@ -315,6 +312,7 @@
 .balance-section .amount {
   font-size: 4rem;
   margin-top: 2rem;
+  font-weight: 400;
 }
 
 .balance-section p {
@@ -375,6 +373,7 @@
 
 .transaction-section .section-header div:hover {
   color: var(--text-primary);
+  font-size: 1.2rem;
 }
 
 .transaction-list {
@@ -417,6 +416,16 @@
 
 .list-item .subtraction {
   color: var(--text-secondary);
+}
+
+.category {
+  font-weight: 300;
+  color: var(--text-secondary);
+}
+
+.status {
+  font-weight: 300;
+  color: var(--success-color);
 }
 
 /* ---------- Expenses guage Section ---------- */

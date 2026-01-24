@@ -227,12 +227,16 @@
     top: 0;
     background: var(--bg-maincard);
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 2rem;
   }
 
   .left-section {
     display: flex;
     gap: 1rem;
+  }
+
+  .right-section {
+    justify-content: end;
   }
 
   .hamburger {
@@ -301,5 +305,30 @@
 
   .dashboard-sections {
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  .balance-section {
+    order: -1;
+  }
+
+  .balance-section .amount {
+    font-size: 6rem;
+  }
+
+  .debit-card-section .card-container {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .debit-card {
+    min-width: 70%;
+  }
+
+  .debit-card img {
+    width: 3.5rem;
   }
 }
