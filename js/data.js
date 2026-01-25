@@ -46,3 +46,6 @@ export const transactionData = [
     timestamp: "2026-01-10T15:20:00",
   },
 ];
+
+// ========== USER MOCK DATA ========== //
+export let userData = {};

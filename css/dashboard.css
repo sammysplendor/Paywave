@@ -181,7 +181,8 @@
 .search-bar-container {
   width: 100%;
   display: flex;
-  /* position: relative; */
+  /* position: relative;
+  z-index: 10; */
 }
 
 .search-icon {

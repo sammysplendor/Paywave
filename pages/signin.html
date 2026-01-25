@@ -18,8 +18,11 @@
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/queries.css" />
+
+    <!-- ========== JAVASCRIPT File ========== -->
+    <script type="module" src="../js/main.js" defer></script>
   </head>
-  <body>
+  <body id="signin-page">
     <div class="signin-page-container">
       <header>
         <h2>Sign in to Paywave</h2>
@@ -27,7 +30,7 @@
         <p>Enter your credentials to access your account securely.</p>
       </header>
 
-      <form action="" method="get">
+      <form id="signin-form" action="" method="get">
         <div class="form-item">
           <div><label for="email">Email address</label></div>
           <div>
@@ -54,6 +57,9 @@
           </div>
           <a class="forgot-password" href="#">Forgot Password</a>
         </div>
+
+        <p class="error"></p>
+        <p class="login-process"></p>
 
         <div class="form-btn-container">
           <button class="signin-btn" type="submit">Sign In</button>

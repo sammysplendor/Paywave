@@ -1,8 +1,18 @@
-import { signupFormValidation } from "./authPages.js";
+import { signupFormValidation, signinFormValidation } from "./authPages.js";
 
-signupFormValidation();
+// =============== AUTH PAGES FUNCTIONALITY =============== //
+const signupPage = document.getElementById("signup-page");
+const signinPage = document.getAnimations("signin-page");
 
-// ========== SEARCH BAR EXPANSION ========== //
+if (signupPage) {
+  signupFormValidation();
+}
+
+if (signinPage) {
+  signinFormValidation();
+}
+
+// =============== SEARCH BAR EXPANSION =============== //
 const searchIcon = document.querySelector(".search-icon");
 const searchInput = document.querySelector(".search-input");
 
@@ -10,9 +20,10 @@ searchIcon.addEventListener("click", () => {
   searchInput.classList.toggle("active");
 });
 
-// ========== HAMBURGER FUNCTIONALITY ========== //
+// =============== HAMBURGER FUNCTIONALITY =============== //
 const hamburger = document.querySelector(".hamburger");
 const sidebar = document.querySelector(".sidebar-nav");
+console.log(hamburger);
 
 hamburger.addEventListener("click", () => {
   sidebar.classList.toggle("active");
