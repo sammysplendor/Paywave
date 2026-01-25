@@ -23,7 +23,6 @@ searchIcon.addEventListener("click", () => {
 // =============== HAMBURGER FUNCTIONALITY =============== //
 const hamburger = document.querySelector(".hamburger");
 const sidebar = document.querySelector(".sidebar-nav");
-console.log(hamburger);
 
 hamburger.addEventListener("click", () => {
   sidebar.classList.toggle("active");

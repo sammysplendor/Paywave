@@ -260,6 +260,20 @@
   .sidebar-nav.active {
     display: flex;
     flex-direction: column;
+    margin-top: 5.5rem;
+    gap: 4rem;
+  }
+
+  .main-menu {
+    gap: 4rem;
+  }
+
+  .other-menu {
+    margin-top: 25rem;
+  }
+
+  .brand-msg {
+    margin-top: 5rem;
   }
 
   .search-bar-container {
@@ -284,12 +298,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 1rem; */
     background: transparent;
     color: var(--text-secondary);
     border: none;
-    /* border-radius: 50%; */
-    /* border: 1px solid var(--text-secondary); */
     cursor: pointer;
   }
 
@@ -339,5 +350,9 @@
 
   .debit-card img {
     width: 3.5rem;
+  }
+
+  .list-item img {
+    width: 2.4rem;
   }
 }
