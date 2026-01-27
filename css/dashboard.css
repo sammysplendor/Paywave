@@ -270,6 +270,18 @@
   cursor: pointer;
 }
 
+#mode-toggle .fa-sun {
+  display: none;
+}
+
+body.light #mode-toggle .fa-moon {
+  display: none;
+}
+
+body.light #mode-toggle .fa-sun {
+  display: inline;
+}
+
 .dashboard-sections {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -561,4 +573,105 @@ td {
 
 .amount-display-container .caption {
   color: var(--text-secondary);
+}
+
+/* ============ LIGHT MODE COLORS ============ */
+
+body.light .sidebar-nav.light {
+  color: var(--text-secondary-light);
+  background: var(--bg-maincard-light);
+}
+
+body.light .sidebar-nav .brandname-and-logo p {
+  color: var(--text-primary-light);
+}
+
+body.light .settings-menu li a:hover {
+  background: var(--bg-topcard-light);
+}
+
+body.light .inactive-menu-item a:hover,
+body.light .settings:hover {
+  color: var(--cta-text-primary-hover-light);
+}
+
+body.light .main-menu a {
+  color: var(--text-secondary-light);
+}
+
+body.light .brand-msg span {
+  color: var(--text-primary-light);
+}
+
+body.light .welcome-msg p {
+  color: var(--text-secondary-light);
+}
+
+body.light .search-input {
+  color: var(--text-primary-light);
+  border: 1px solid var(--text-secondary-light);
+}
+
+body.light .search-input::placeholder {
+  color: var(--text-secondary-light);
+}
+
+body.light .add-btn-container {
+  background: var(--bg-topcard-light);
+}
+
+body.light .add-btn {
+  background: var(--bg-main-light);
+  color: var(--text-primary-light);
+}
+
+body.light .section-title .fa-regular {
+  color: var(--text-secondary-light);
+}
+
+body.light .balance-section p {
+  color: var(--text-secondary-light);
+}
+
+body.light .balance-section .buttons-container {
+  background-color: var(--bg-topcard-light);
+}
+
+body.light .balance-section .buttons-container button {
+  background: var(--bg-main-light);
+  color: var(--text-primary-light);
+  box-shadow: var(--shadow-03);
+}
+
+body.light .transaction-section .section-header div {
+  background: var(--bg-topcard-light);
+  color: var(--text-secondary-light);
+}
+
+body.light .transaction-section .section-header div:hover {
+  color: var(--text-primary-light);
+}
+
+body.light .list-item .detail .timestamp {
+  color: var(--text-secondary-light);
+}
+
+body.light .list-item .subtraction {
+  color: var(--text-secondary-light);
+}
+
+body.light .category {
+  color: var(--text-secondary-light);
+}
+
+body.light .guage-value p {
+  color: var(--text-secondary-light);
+}
+
+body.light .amount-display-container {
+  background: var(--bg-topcard-light);
+}
+
+body.light .amount-display-container .caption {
+  color: var(--text-secondary-light);
 }

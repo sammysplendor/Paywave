@@ -1,5 +1,5 @@
 :root {
-  /* ======== Colors ======== */
+  /* ======== COLORS (Dark Mode) ======== */
   --bg-main: #060606;
   --bg-maincard: #171717;
   --bg-topcard: #272626;
@@ -16,6 +16,22 @@
   --text-accent: #fd1d1d;
 
   --success-color: #2ad12a;
+
+  /* ======== COLORS (Light Mode) ======== */
+  --bg-main-light: #f8fafc;
+  --bg-maincard-light: #ffffff;
+  --bg-topcard-light: #f1f3f5;
+
+  --cta-bg-primary-light: #060606;
+  --cta-text-primary-light: #ffffff;
+  --cta-bg-primary-hover-light: #1a1a1a;
+  --cta-text-primary-hover-light: #ffffff;
+
+  --text-primary-light: #060606;
+  --text-secondary-light: #6b7280;
+
+  /* ======== Shadows ======== */
+  --shadow-03: 0 1px 4px #333232;
 
   /* ======== Transitions ======== */
   --trans-03: all 0.1s ease;

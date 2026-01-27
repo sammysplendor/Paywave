@@ -70,3 +70,10 @@ visibilityIcon.addEventListener("click", () => {
 
 // =============== TRANSACTIONS HISTORY =============== //
 recentTransactions();
+
+// =============== MODE TOGGLE FUNCTIONAILITY ================= //
+const modeButton = document.getElementById("mode-toggle");
+
+modeButton.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+});
