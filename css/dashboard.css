@@ -355,10 +355,43 @@
   text-align: center;
 }
 
+.balance-section .section-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title .fa-regular {
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.section-title .fa-eye-slash,
+.section-title .fa-eye.active {
+  display: none;
+}
+
+.section-title .fa-eye,
+.section-title .fa-eye-slash.active {
+  display: inline;
+}
+
 .balance-section .amount {
   font-size: 4rem;
   margin-top: 2rem;
   font-weight: 400;
+}
+
+.balance-section #amount-hidden,
+#amount-seen.active {
+  display: none;
+  letter-spacing: 0.5rem;
+  font-weight: 800;
+  font-size: 8rem;
+}
+
+#amount-seen,
+#amount-hidden.active {
+  display: block;
 }
 
 .balance-section p {

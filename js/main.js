@@ -53,5 +53,20 @@ document.addEventListener("click", (event) => {
   }
 });
 
+// =============== BALANCE VISIBILITY =============== //
+const visibilityIcon = document.querySelector(".visibility-icon-container");
+const hideIcon = document.querySelector(".fa-eye-slash");
+const showIcon = document.querySelector(".fa-eye");
+const amountDisplayed = document.getElementById("amount-seen");
+const amountHidden = document.getElementById("amount-hidden");
+
+visibilityIcon.addEventListener("click", () => {
+  hideIcon.classList.toggle("active");
+  showIcon.classList.toggle("active");
+
+  amountDisplayed.classList.toggle("active");
+  amountHidden.classList.toggle("active");
+});
+
 // =============== TRANSACTIONS HISTORY =============== //
 recentTransactions();
