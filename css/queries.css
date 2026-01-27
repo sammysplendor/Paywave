@@ -80,6 +80,10 @@
   .small-txt {
     font-size: 1.1rem;
   }
+
+  .guage-container {
+    width: 90%;
+  }
 }
 
 /* ============ SMALL (Phone landscape): 576px - 767px ============ */
@@ -262,9 +266,18 @@
     flex-direction: column;
     margin-top: 5.5rem;
     gap: 4rem;
+    width: 25rem;
   }
 
   .main-menu {
+    gap: 4rem;
+  }
+
+  .settings-menu {
+    margin-top: 2rem;
+  }
+
+  .dropdown.active .settings-menu {
     gap: 4rem;
   }
 
@@ -354,5 +367,27 @@
 
   .list-item img {
     width: 2.4rem;
+  }
+
+  .guage-container {
+    width: 80%;
+  }
+
+  .guage-value h3 {
+    font-size: 4rem;
+  }
+
+  .guage-value p {
+    font-size: 2rem;
+  }
+
+  .amount-display-container {
+    padding: 2rem 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .amount-display-container .caption,
+  .amount-display-container #amount {
+    font-size: 2rem;
   }
 }

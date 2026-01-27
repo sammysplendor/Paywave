@@ -1,4 +1,5 @@
 import { signupFormValidation, signinFormValidation } from "./authPages.js";
+import { recentTransactions } from "./transactions.js";
 
 // =============== AUTH PAGES FUNCTIONALITY =============== //
 const signupPage = document.getElementById("signup-page");
@@ -36,3 +37,21 @@ document.addEventListener("click", (event) => {
     sidebar.classList.remove("active");
   }
 });
+
+// =============== DROPDOWN FUNCTIONALITY =============== //
+const settingsButton = document.querySelector(".settings");
+const dropdown = document.querySelector(".dropdown");
+
+settingsButton.addEventListener("click", (event) => {
+  event.stopPropagation();
+  dropdown.classList.toggle("active");
+});
+
+document.addEventListener("click", (event) => {
+  if (!dropdown.contains(event.target)) {
+    dropdown.classList.remove("active");
+  }
+});
+
+// =============== TRANSACTIONS HISTORY =============== //
+recentTransactions();

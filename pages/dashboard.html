@@ -69,14 +69,15 @@
               </a>
             </li>
 
-            <li class="inactive-menu-item">
+            <li class="inactive-menu-item dropdown">
               <button class="settings">
-                <i class="fa-solid fa-gear"></i><span>Settings</span>
+                <i class="fa-solid fa-gear"></i><span>Settings</span
+                ><i class="fa-solid fa-chevron-down"></i>
               </button>
-              <ul>
-                <li>Profile & Security</li>
-                <li>Payment Preference</li>
-                <li>Notifications</li>
+              <ul class="settings-menu">
+                <li><a href="#">Profile & Security</a></li>
+                <li><a href="#">Payment Preference</a></li>
+                <li><a href="#">Notifications</a></li>
               </ul>
             </li>
           </ul>
@@ -198,55 +199,7 @@
               </div>
             </div>
 
-            <dl class="transaction-list">
-              <div class="list-item">
-                <div>
-                  <img src="../assets/paypal-4.svg" alt="paypal" />
-                  <div class="detail">
-                    <dt>PayPal - Recieved</dt>
-                    <dd>January 19, 2026 | 07:20PM</dd>
-                  </div>
-                </div>
-
-                <p class="category">Transfer</p>
-
-                <p class="addition">+ ₦2,300,000</p>
-
-                <p class="status">Successful</p>
-              </div>
-
-              <div class="list-item">
-                <div>
-                  <img src="../assets/spotify-2.svg" alt="spotify" />
-                  <div class="detail">
-                    <dt>Spotify Premium</dt>
-                    <dd>January 12, 2024 | 11:33AM</dd>
-                  </div>
-                </div>
-
-                <p class="category">Subscription</p>
-
-                <p class="subtraction">- ₦24,906</p>
-
-                <p class="status">Successful</p>
-              </div>
-
-              <div class="list-item">
-                <div>
-                  <img src="../assets/GTBank-logo.png" alt="GTBank" />
-                  <div class="detail">
-                    <dt>GTBank - Recieved</dt>
-                    <dd>January 8, 2026 | 02:05PM</dd>
-                  </div>
-                </div>
-
-                <p class="category">Transfer</p>
-
-                <p class="addition">+ ₦240,250</p>
-
-                <p class="status">Successful</p>
-              </div>
-            </dl>
+            <table class="transaction-list"></table>
           </div>
 
           <div class="section expenses-section">

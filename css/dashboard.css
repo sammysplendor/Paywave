@@ -2,7 +2,7 @@
 
 .sidebar-nav {
   min-height: 100vh;
-  width: 20rem;
+  width: 25rem;
   padding: 2rem;
   color: var(--text-secondary);
   background: var(--bg-maincard);
@@ -75,16 +75,56 @@
   transition: var(--trans-03);
 }
 
+.dropdown {
+  position: relative;
+}
+
 .settings {
   border: none;
   color: inherit;
   font-size: 1.5rem;
   font-family: inherit;
-  background: transparent;
+  background: none;
   margin-left: 1.5rem;
-  transition: var(--trans-03);
   cursor: pointer;
+  display: flex;
+  border-radius: 1rem;
+  padding: 1.5rem 0;
+  transition: var(--trans-04);
 }
+
+.settings-menu {
+  display: none;
+  padding: 0.5rem 0;
+}
+
+/* ---------- Dropdown Styling ---------- */
+.settings li a {
+  display: block;
+  padding: 2.7rem 1.2rem;
+}
+
+.settings-menu li a:hover {
+  background: var(--bg-topcard);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+
+.dropdown.active .settings-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 1.5rem;
+}
+
+.dropdown.active .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+  transition: transform 0.2s ease;
+}
+/* ---------------------------------------- */
 
 .inactive-menu-item a:hover,
 .settings:hover {
@@ -93,6 +133,10 @@
 
 .settings span {
   margin-left: 1rem;
+}
+
+.fa-chevron-down {
+  margin-left: 6rem;
 }
 
 .main-menu a {
@@ -146,7 +190,7 @@
 .dashboard-main-content {
   height: 100vh;
   flex-grow: 1;
-  margin-left: 21rem;
+  margin-left: 25rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -355,6 +399,10 @@
 }
 
 /* ---------- Transactions Section ---------- */
+section .transaction-section {
+  gap: 1rem;
+}
+
 .transaction-section .section-header {
   display: flex;
   justify-content: space-between;
@@ -378,16 +426,19 @@
   font-size: 1.2rem;
 }
 
-.transaction-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+table {
+  border-collapse: collapse;
 }
 
-.list-item {
+td {
+  padding: 1rem 0;
+  white-space: nowrap;
+}
+
+.list-item td:first-child > div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 .list-item div {
@@ -408,16 +459,21 @@
   align-items: start;
 }
 
-.list-item .detail dt {
+.list-item .detail .name {
   font-size: 1.5rem;
 }
 
-.list-item .detail dd {
+.list-item .detail .timestamp {
   color: var(--text-secondary);
 }
 
-.list-item p {
+.list-item .other-details {
   font-size: 1.5rem;
+}
+
+.other-details {
+  text-align: left;
+  flex-wrap: nowrap;
 }
 
 .list-item .subtraction {
