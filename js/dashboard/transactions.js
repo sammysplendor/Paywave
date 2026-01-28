@@ -1,4 +1,4 @@
-import { transactionData } from "./data.js";
+import { transactionData } from "../data.js";
 
 export const recentTransactions = () => {
   const transactionList = document.querySelector(".transaction-list");

@@ -1,5 +1,6 @@
 import { signupFormValidation, signinFormValidation } from "./authPages.js";
-import { recentTransactions } from "./transactions.js";
+import { recentTransactions } from "./dashboard/transactions.js";
+import { balanceVisibility } from "./dashboard/balance.js";
 
 // =============== AUTH PAGES FUNCTIONALITY =============== //
 const signupPage = document.getElementById("signup-page");
@@ -54,19 +55,7 @@ document.addEventListener("click", (event) => {
 });
 
 // =============== BALANCE VISIBILITY =============== //
-const visibilityIcon = document.querySelector(".visibility-icon-container");
-const hideIcon = document.querySelector(".fa-eye-slash");
-const showIcon = document.querySelector(".fa-eye");
-const amountDisplayed = document.getElementById("amount-seen");
-const amountHidden = document.getElementById("amount-hidden");
-
-visibilityIcon.addEventListener("click", () => {
-  hideIcon.classList.toggle("active");
-  showIcon.classList.toggle("active");
-
-  amountDisplayed.classList.toggle("active");
-  amountHidden.classList.toggle("active");
-});
+balanceVisibility();
 
 // =============== TRANSACTIONS HISTORY =============== //
 recentTransactions();
