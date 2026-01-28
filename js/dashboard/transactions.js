@@ -6,8 +6,8 @@ export const recentTransactions = () => {
   let transactionsHTML = "";
 
   transactionData.forEach((transaction) => {
-    let amountClass = "";
-    transaction.arithsign === "+" ? "addition" : "subtraction";
+    let amountClass =
+      transaction.arithsign === "+" ? "addition" : "subtraction";
 
     transactionsHTML += `
        <tr class="list-item">
@@ -15,7 +15,7 @@ export const recentTransactions = () => {
                   <div>
                     <img src="${transaction.source.icon}" alt="${transaction.source.name}" />
                     <div class="detail">
-                      <p class="name">${transaction.title}</p>
+                      <p class="name">${transaction.title} - ${transaction.type}</p>
                       <p class="timestamp">${transaction.timestamp}</p>
                     </div> 
                   </div>
@@ -31,5 +31,4 @@ export const recentTransactions = () => {
   });
 
   transactionList.innerHTML = transactionsHTML;
-  console.log(transactionList);
 };

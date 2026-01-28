@@ -396,8 +396,8 @@ body.light #mode-toggle .fa-sun {
 .balance-section #amount-hidden,
 #amount-seen.active {
   display: none;
-  letter-spacing: 0.5rem;
-  font-weight: 800;
+  letter-spacing: 0.4rem;
+  font-weight: 600;
   font-size: 8rem;
 }
 
@@ -408,6 +408,7 @@ body.light #mode-toggle .fa-sun {
 
 .balance-section p {
   color: var(--text-secondary);
+  font-size: 1.5rem;
 }
 
 .balance-section .buttons-container {
@@ -508,7 +509,8 @@ td {
   font-size: 1.5rem;
 }
 
-.list-item .detail .timestamp {
+.list-item .detail .timestamp,
+.list-item .subtraction {
   color: var(--text-secondary);
 }
 
@@ -519,10 +521,6 @@ td {
 .other-details {
   text-align: left;
   flex-wrap: nowrap;
-}
-
-.list-item .subtraction {
-  color: var(--text-secondary);
 }
 
 .category {
@@ -603,17 +601,9 @@ body.light .brand-msg span {
   color: var(--text-primary-light);
 }
 
-body.light .welcome-msg p {
-  color: var(--text-secondary-light);
-}
-
 body.light .search-input {
   color: var(--text-primary-light);
   border: 1px solid var(--text-secondary-light);
-}
-
-body.light .search-input::placeholder {
-  color: var(--text-secondary-light);
 }
 
 body.light .add-btn-container {
@@ -625,11 +615,10 @@ body.light .add-btn {
   color: var(--text-primary-light);
 }
 
-body.light .section-title .fa-regular {
-  color: var(--text-secondary-light);
-}
-
-body.light .balance-section p {
+body.light .section-title .fa-regular,
+body.light .balance-section p,
+body.light .search-input::placeholder,
+body.light .welcome-msg p {
   color: var(--text-secondary-light);
 }
 
@@ -652,26 +641,14 @@ body.light .transaction-section .section-header div:hover {
   color: var(--text-primary-light);
 }
 
-body.light .list-item .detail .timestamp {
-  color: var(--text-secondary-light);
-}
-
-body.light .list-item .subtraction {
-  color: var(--text-secondary-light);
-}
-
-body.light .category {
-  color: var(--text-secondary-light);
-}
-
-body.light .guage-value p {
+body.light .list-item .detail .timestamp,
+body.light .list-item .subtraction,
+body.light .category,
+body.light .guage-value p,
+body.light .amount-display-container .caption {
   color: var(--text-secondary-light);
 }
 
 body.light .amount-display-container {
   background: var(--bg-topcard-light);
-}
-
-body.light .amount-display-container .caption {
-  color: var(--text-secondary-light);
 }

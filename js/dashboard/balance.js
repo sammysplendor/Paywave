@@ -19,8 +19,30 @@ export const balanceVisibility = () => {
 
 // ============ FETCH & DISPLAY OF MOCK ACCOUNT BALANCE ============ //
 export const accountBalanceDisplay = () => {
-  userData.push({
-    userFullName: "Sammy Splendor",
-    balance: 10182000,
-  });
+  userData.balance = 10182000;
+
+  const totalBalance = document.querySelector(".amount");
+  const currentDateTime = document.getElementById("current-date-time");
+
+  totalBalance.innerText = `₦${userData.balance.toLocaleString("en-NG")}`;
+
+  function updateDateTime() {
+    const now = new Date();
+
+    const currentDate = now.toLocaleDateString("en-NG", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    });
+
+    const currentTime = now.toLocaleTimeString("en-NG", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
+
+    currentDateTime.innerText = `${currentDate} | ${currentTime}`;
+  }
+
+  updateDateTime();
 };

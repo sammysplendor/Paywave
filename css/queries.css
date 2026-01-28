@@ -369,6 +369,13 @@
     width: 2.4rem;
   }
 
+  .list-item .detail .name {
+    max-width: 12.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .guage-container {
     width: 80%;
   }

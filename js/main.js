@@ -1,6 +1,9 @@
 import { signupFormValidation, signinFormValidation } from "./authPages.js";
 import { recentTransactions } from "./dashboard/transactions.js";
-import { balanceVisibility } from "./dashboard/balance.js";
+import {
+  accountBalanceDisplay,
+  balanceVisibility,
+} from "./dashboard/balance.js";
 
 // =============== AUTH PAGES FUNCTIONALITY =============== //
 const signupPage = document.getElementById("signup-page");
@@ -54,8 +57,10 @@ document.addEventListener("click", (event) => {
   }
 });
 
-// =============== BALANCE VISIBILITY =============== //
+// =============== ACCOUNT BALANCE =============== //
 balanceVisibility();
+
+accountBalanceDisplay();
 
 // =============== TRANSACTIONS HISTORY =============== //
 recentTransactions();
