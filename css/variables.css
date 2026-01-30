@@ -31,6 +31,8 @@
   --text-secondary-light: #6b7280;
 
   /* ======== Shadows ======== */
+  --shadow-01: 0 1px 6px #505050;
+  --shadow-02: 0 1px 4px #444;
   --shadow-03: 0 1px 4px #333232;
 
   /* ======== Transitions ======== */

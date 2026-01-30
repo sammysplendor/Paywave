@@ -598,9 +598,18 @@ td {
 
 /* ============ LIGHT MODE COLORS ============ */
 
-body.light .sidebar-nav.light {
+body.light {
+  background: var(--bg-main-light);
+}
+
+body.light .dashboard-container {
+  color: var(--text-primary-light);
+}
+
+body.light .sidebar-nav {
   color: var(--text-secondary-light);
   background: var(--bg-maincard-light);
+  box-shadow: 1px 0 6px #505050;
 }
 
 body.light .sidebar-nav .brandname-and-logo p {
@@ -609,33 +618,63 @@ body.light .sidebar-nav .brandname-and-logo p {
 
 body.light .settings-menu li a:hover {
   background: var(--bg-topcard-light);
+  box-shadow: var(--shadow-02);
 }
 
-body.light .inactive-menu-item a:hover,
+body.light .main-menu .dashboard-tab {
+  color: var(--text-primary-light);
+}
+
+body.light .inactive-menu-item a:hover {
+  color: var(--text-primary-light);
+}
+
 body.light .settings:hover {
-  color: var(--cta-text-primary-hover-light);
+  color: var(--text-primary-light);
 }
 
 body.light .main-menu a {
   color: var(--text-secondary-light);
 }
 
-body.light .brand-msg span {
+body.light .brand-msg span,
+body.light .signup-link,
+body.light .signin-link,
+body.light form label {
   color: var(--text-primary-light);
 }
 
-body.light .search-input {
+body.light .search-input,
+body.light form input {
   color: var(--text-primary-light);
   border: 1px solid var(--text-secondary-light);
 }
 
+body.light form button {
+  background: var(--cta-bg-primary-light);
+  color: var(--cta-text-primary-light);
+}
+
+body.light form button:hover {
+  background: var(--cta-bg-primary-hover-light);
+  color: var(--cta-text-primary-hover-light);
+  border: 1.5px solid var(--cta-text-primary-hover-light);
+}
+
+body.light .section {
+  background: var(--bg-maincard-light);
+  box-shadow: var(--shadow-01);
+}
+
 body.light .add-btn-container {
   background: var(--bg-topcard-light);
+  box-shadow: var(--shadow-02);
 }
 
 body.light .add-btn {
   background: var(--bg-main-light);
   color: var(--text-primary-light);
+  box-shadow: var(--shadow-03);
 }
 
 body.light .section-title .fa-regular,
@@ -674,9 +713,18 @@ body.light .amount-display-container .caption {
 
 body.light .amount-display-container {
   background: var(--bg-topcard-light);
+  box-shadow: var(--shadow-02);
 }
 
 body.light .transaction-search-input {
   border: 0.5px solid var(--text-secondary-light);
   color: var(--text-primary-light);
+}
+
+body.light footer {
+  color: var(--text-secondary-light);
+}
+
+body.light #unfilled {
+  stroke: #cecece;
 }

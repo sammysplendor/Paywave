@@ -257,6 +257,10 @@
     background-color: var(--text-primary);
   }
 
+  body.light .hamburger span {
+    background-color: var(--text-primary-light);
+  }
+
   .sidebar-nav {
     display: none;
   }
@@ -267,6 +271,10 @@
     margin-top: 5.5rem;
     gap: 4rem;
     width: 25rem;
+  }
+
+  .sidebar-nav .toggle {
+    display: none;
   }
 
   .main-menu {
@@ -287,6 +295,11 @@
 
   .brand-msg {
     margin-top: 5rem;
+  }
+
+  body.light .dashboard-main-content header {
+    background: var(--bg-maincard-light);
+    box-shadow: var(--shadow-01);
   }
 
   .search-bar-container {
