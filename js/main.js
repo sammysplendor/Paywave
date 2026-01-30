@@ -1,9 +1,10 @@
 import { signupFormValidation, signinFormValidation } from "./authPages.js";
-import { recentTransactions } from "./dashboard/transactions.js";
 import {
-  accountBalanceDisplay,
-  balanceVisibility,
-} from "./dashboard/balance.js";
+  recentTransactions,
+  transactionSearch,
+} from "./dashboard/transactions.js";
+import { accountBalanceDisplay } from "./dashboard/balance.js";
+import { balanceVisibility } from "./dashboard/balance.js";
 
 // =============== AUTH PAGES FUNCTIONALITY =============== //
 const signupPage = document.getElementById("signup-page");
@@ -64,6 +65,8 @@ accountBalanceDisplay();
 
 // =============== TRANSACTIONS HISTORY =============== //
 recentTransactions();
+
+transactionSearch();
 
 // =============== MODE TOGGLE FUNCTIONAILITY ================= //
 const modeButton = document.getElementById("mode-toggle");

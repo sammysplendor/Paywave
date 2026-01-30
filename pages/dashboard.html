@@ -34,6 +34,8 @@
   </head>
   <body>
     <div class="dashboard-container">
+      <!-- =============== SIDEBAR =============== -->
+
       <aside class="sidebar-nav">
         <div class="brandname-and-logo">
           <img src="../assets/logo.jpg" alt="logo" width="50px" />
@@ -102,6 +104,8 @@
       </aside>
 
       <main class="dashboard-main-content">
+        <!-- =============== DASHBOARD HEADER =============== -->
+
         <header>
           <div class="left-section">
             <button class="hamburger" type="button" aria-label="Open menu">
@@ -143,6 +147,8 @@
         </header>
 
         <section class="dashboard-sections">
+          <!-- =============== DEBIT CARD SECTION =============== -->
+
           <div class="section debit-card-section">
             <h4 class="section-title">Debit Card Account</h4>
 
@@ -177,6 +183,8 @@
             </div>
           </div>
 
+          <!-- =============== ACCOUNT BALANCE SECTION =============== -->
+
           <div class="section balance-section">
             <div class="section-title">
               <h4>Your Total Balance</h4>
@@ -203,16 +211,24 @@
             </div>
           </div>
 
+          <!-- =============== TRANSACTION SECTION =============== -->
+
           <div class="section transaction-section">
             <div class="section-header">
               <h4 class="section-title">Recent Transactions</h4>
-              <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
+
+              <section class="transaction-search">
+                <input type="text" class="transaction-search-input" />
+                <div id="search-btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </section>
             </div>
 
             <table class="transaction-list"></table>
           </div>
+
+          <!-- =============== EXPENSES GUAGE SECTION =============== -->
 
           <div class="section expenses-section">
             <h4 class="section-title">Expenses</h4>
@@ -248,8 +264,6 @@
             </div>
           </div>
         </section>
-
-        <footer></footer>
       </main>
     </div>
   </body>
