@@ -2,7 +2,7 @@ import { userData } from "./data.js";
 
 // =============== SIGNUP FORM =============== //
 
-export const signupFormValidation = () => {
+export const initSignup = () => {
   const signupForm = document.querySelector("#signup-form");
 
   if (!signupForm) return;
@@ -81,7 +81,7 @@ export const signupFormValidation = () => {
 
 // =============== SIGNIN FORM =============== //
 
-export const signinFormValidation = () => {
+export const initSignin = () => {
   const signinForm = document.getElementById("signin-form");
 
   if (!signinForm) return;
@@ -109,6 +109,7 @@ export const signinFormValidation = () => {
     }
 
     error.innerText = "";
+    localStorage.setItem("isLoggedIn", "true");
     loginProcess.innerText = "Logging in...";
 
     setTimeout(() => {
